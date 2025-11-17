@@ -45,5 +45,9 @@ export const generateMeta = async (args: {
       url: Array.isArray(doc?.slug) ? doc?.slug.join('/') : '/',
     }),
     title,
+    robots: {
+      index: false,
+      follow: false,
+    },
   }
 }
